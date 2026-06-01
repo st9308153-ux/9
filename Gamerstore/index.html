@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerStore | Каталог ігор</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <h1 class="logo">🎮 GamerStore</h1>
+            <div class="cart">
+                Кошик: <span id="cart-count" class="cart-badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="catalog-header">
+                <h2>Каталог ігор</h2>
+                <div class="filters">
+                    <button class="btn-filter active" data-filter="Всі">Всі ігри</button>
+                    <button class="btn-filter" data-filter="Екшен">Екшен</button>
+                    <button class="btn-filter" data-filter="Відкритий світ">Відкритий світ</button>
+                    <button class="btn-filter" data-filter="Виживання">Виживання</button>
+                    <button class="btn-filter" data-filter="Спорт">Спорт</button>
+                </div>
+            </div>
+
+            <div id="games-grid" class="games-grid"></div>
+        </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
